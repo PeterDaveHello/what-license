@@ -2,6 +2,8 @@
 
 #### Project's License
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/PeterDaveHello/what-license.svg)](https://greenkeeper.io/)
+
 Copyright 2012 Dirk Holtwick
  
 Licensed under the Apache License, Version 2.0 (the "License");
