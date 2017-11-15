@@ -2,7 +2,8 @@
 
 #### Project's License
 
-Copyright 2012 Dirk Holtwick
+Copyright 2016 -      Peter Dave Hello
+Copyright 2012 - 2016 Dirk Holtwick
  
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
