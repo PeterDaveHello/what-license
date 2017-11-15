@@ -1,18 +1,15 @@
-*Ever wondered which Open Source license is used for a project? Most of them look very similar, but it might make a big difference to know the license's origin. Just paste the license and see what our tool is guessing.*
+what-license
+-------
 
-#### Project's License
+This is a web application which helps you recognize which Open Source license is used for a project, just paste the text and get the result!
 
-Copyright 2016 -      Peter Dave Hello
-Copyright 2012 - 2016 Dirk Holtwick
- 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Currently supported licenses:
+ - MIT
+ - GPL 2.0
+ - GPL 3.0
+ - Unlicense
+ - BSD 2 Clause
+ - BSD 3 Clause
+ - Apache 2.0
 
-<http://www.apache.org/licenses/LICENSE-2.0>
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+This project is forked from [@holtwick/what-license.com](https://github.com/holtwick/what-license.com).
