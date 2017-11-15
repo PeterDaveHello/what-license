@@ -16,9 +16,16 @@ LICENSES = [
     ],
 
     [
+        "BSD 2-Clause License",
+        "https://opensource.org/licenses/BSD-2-Clause",
+        "BSD-2-Clause",
+        [COMMERCIAL_OK],
+    ],
+
+    [
         "BSD 3-Clause License",
         "https://opensource.org/licenses/BSD-3-Clause",
-        "BSD",
+        "BSD-3-Clause",
         [COMMERCIAL_OK],
     ],
 
