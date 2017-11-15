@@ -1,41 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:py="http://purl.org/kid/ns#">
+<!DOCTYPE>
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <title>
-      What License? Online check which Open Source license is used.
-    </title>
-    <!--! link rel="shortcut icon" href="favicon.ico" / -->
-    <link rel="stylesheet" href="blueprint/screen.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="blueprint/print.css" type="text/css" media="print">
+    <title>What License? Online check which Open Source license is used.</title>
+    <link rel="stylesheet" href="blueprint/screen.css" media="screen, projection" />
+    <link rel="stylesheet" href="blueprint/print.css" media="print" />
     <!--[if lt IE 8]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-   <script type="text/javascript">
-/* <![CDATA[ */
+    <script>
+    /* <![CDATA[ */
     (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
+      var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
+      t.parentNode.insertBefore(s, t);
     })();
-/* ]]> */
-</script> 
+    /* ]]> */
+    </script>
     <script src="diff/diff_match_patch.js"></script>
     <script src="app.js"></script>
-    <link  href="https://fonts.googleapis.com/css?family=Copse:regular" rel="stylesheet" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Copse:regular" rel="stylesheet" />
     <style>
     body {
       font-family: 'Copse', serif;
       font-size: 14px;
     }
-    
     textarea {
       width: 100%;
       background: #E2F6FE;
       height: 80px;
     }
-        
     .ok {
       background: #79BD70;
       padding: 2px;
@@ -43,7 +38,6 @@
       font-size: 80%;
       font-weight: bold;
     }
-    
     .warn {
       background: #FF7C70;
       padding: 2px;
@@ -51,9 +45,9 @@
       font-weight: bold;
     }
     .license {
-        text-indent: -99999;
-        height: 0;
-		overflow: hidden;
+      text-indent: -99999;
+      height: 0;
+      overflow: hidden;
     }
     </style>
   </head>
@@ -61,46 +55,34 @@
     <div class="container">
       <br>
       <div class="span-24 last">
-        <h1>
-          What license?
-        </h1>
+        <h1>What license?</h1>
         <p>
-          <div style="width:200px;float:right; text-align:right;">
-            <a class="FlattrButton" style="display:none;" href="https://peterdavehello.github.io/what-license/""></a>
-<noscript><a href="http://flattr.com/thing/171931/What-license" target="_blank">
-<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
-          </div>Ever wondered which Open Source license is used for a project? Most of them look very similar, but it might make a big difference to know the license's origin. Just paste the license and see what our tool is guessing.
+          Ever wondered which Open Source license is used for a project? Most of them look very similar, but it might make a big difference to know the license's origin. Just paste the license and see what our tool is guessing.
         </p>
         <form action="#calc" method="post" enctype="multipart/form-data" onsubmit="window.check(); return false;">
-          <h3>
-            Paste license text 
-          </h3>
+          <h3>Paste license text</h3>
           <p>
-            <textarea name="data" id="data" onfocus="this.style.height = '280px'; ovalue = this.value; this.value = ''" onblur="if(!this.value) this.value = ovalue">
-            </textarea>
-            <br>
+            <textarea name="data" id="data" onfocus="this.style.height = '280px'; ovalue = this.value; this.value = ''" onblur="if(!this.value) this.value = ovalue"></textarea>
+            <br />
             <input type="submit" value="Check License" id="button" />
           </p>
         </form>
         <div id="result" style="display:none">
-            <br>
-          <h3>
-            Ranking of best matches
-          </h3>
-          <ol id="list">           
+          <br />
+          <h3>Ranking of best matches</h3>
+          <ol id="list">
           </ol>
         </div>
         <hr>
         <p>
-          We compare with some licenses listed at <a href="http://www.opensource.org/licenses/alphabetical">opensource.org</a>. Brought to you by <a href="https://github.com/PeterDaveHello">Peter Dave Hello</a>. 
+          We compare with some licenses listed at <a href="http://www.opensource.org/licenses/alphabetical">opensource.org</a>. Brought to you by <a href="https://github.com/PeterDaveHello">Peter Dave Hello</a>.
         </p>
         <p>
-          THIS SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND! 
+          THIS SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND!
         </p>
-        
+
         <!-- The License texts -->
-        
-    <pre class="license" id="Unlicense">
+<pre class="license" id="Unlicense">
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -125,10 +107,8 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
-
-    </pre>
-
-       <pre class="license" id="APACHE">
+</pre>
+<pre class="license" id="APACHE">
 Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/
