@@ -1,0 +1,22 @@
+{
+  "name": "what-license",
+  "version": "0.0.1",
+  "description": "Quickly check what license text you are facing",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterDaveHello/what-license.git"
+  },
+  "scripts": {
+    "build": "npm run-script coffee && npm run-script minify",
+    "coffee": "coffee -c app.coffee",
+    "minify": "uglifyjs --mangle --compress if_return=true -o app.js app.js"
+  },
+  "keywords": [
+    "license"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "coffeescript": "^2.0.2",
+    "uglify-es": "^3.1.9"
+  }
+}
