@@ -10,7 +10,7 @@ LICENSES = [
 
     [
         "MIT License",
-        "https://opensource.org/licenses/mit-license",
+        "https://opensource.org/licenses/MIT",
         "MIT",
         [COMMERCIAL_OK],
     ],
@@ -31,43 +31,43 @@ LICENSES = [
 
     [
         "Apache License 2.0",
-        "https://www.opensource.org/licenses/apache2.0",
-        "APACHE",
+        "https://opensource.org/licenses/Apache-2.0",
+        "Apache-2.0",
         [COMMERCIAL_OK],
     ],
 
     [
         "Header of Apache License 2.0",
-        "https://www.opensource.org/licenses/apache2.0",
-        "APACHE_SHORT",
+        "https://opensource.org/licenses/Apache-2.0",
+        "Apache-2.0_SHORT",
         [COMMERCIAL_OK],
     ],
 
     [
-        "GNU General Public License, version 2 [GPLv2]",
-        "https://www.opensource.org/licenses/gpl-2.0.php",
-        "GPL2",
+        "GNU General Public License version 2 (GPL-2.0)",
+        "https://opensource.org/licenses/GPL-2.0",
+        "GPL-2.0",
         [],
     ],
 
     [
-        "Header of GNU General Public License, version 2 [GPLv2]",
-        "https://www.opensource.org/licenses/gpl-2.0.php",
-        "GPL2SHORT",
+        "Header of GNU General Public License version 2 (GPL-2.0)",
+        "https://opensource.org/licenses/GPL-2.0",
+        "GPL-2.0_SHORT",
         [],
     ],
 
     [
-        "GNU General Public License, version 3 [GPLv3]",
-        "https://www.opensource.org/licenses/gpl-3.0.html",
-        "GPL3",
+        "GNU General Public License version 3 (GPL-3.0)",
+        "https://opensource.org/licenses/GPL-3.0",
+        "GPL-3.0",
         [],
     ],
 
     [
-        "Header of GNU General Public License, version 3 [GPLv3]",
-        "https://www.opensource.org/licenses/gpl-3.0.html",
-        "GPL3SHORT",
+        "Header of GNU General Public License version 3 (GPL-3.0)",
+        "https://opensource.org/licenses/GPL-3.0",
+        "GPL-3.0_SHORT",
         [],
     ],
 ]
