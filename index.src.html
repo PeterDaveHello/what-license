@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <title>What License? Online check which Open Source license is used.</title>
+    <link rel="stylesheet" href="blueprint/screen.css" media="screen, projection" />
+    <link rel="stylesheet" href="blueprint/print.css" media="print" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <script src="diff/diff_match_patch.js"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Copse:regular" rel="stylesheet" />
+    <style>
+    body {
+      font-family: 'Copse', serif;
+      font-size: 14px;
+    }
+    textarea {
+      width: 100%;
+      background: #E2F6FE;
+      height: 80px;
+    }
+    .ok {
+      background: #79BD70;
+      padding: 2px;
+      color: white;
+      font-size: 80%;
+      font-weight: bold;
+    }
+    .warn {
+      background: #FF7C70;
+      padding: 2px;
+      font-size: 80%;
+      font-weight: bold;
+    }
+    .license {
+      text-indent: -99999;
+      height: 0;
+      overflow: hidden;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div class="span-24 last">
+        <h1>What license?</h1>
+        <p>
+          Ever wondered which Open Source license is used for a project? Most of them look very similar, but it might make a big difference to know the license's origin. Just paste the license and see what our tool is guessing.
+        </p>
+        <form action="#calc" method="post" enctype="multipart/form-data" onsubmit="window.check(); return false;">
+          <h3>Paste license text</h3>
+          <p>
+            <textarea name="data" id="data" onfocus="this.style.height = '280px'; ovalue = this.value; this.value = ''" onblur="if(!this.value) this.value = ovalue"></textarea>
+            <br />
+            <input type="submit" value="Check License" id="button" />
+          </p>
+        </form>
+        <div id="result" style="display:none">
+          <br />
+          <h3>Ranking of best matches</h3>
+          <ol id="list">
+          </ol>
+        </div>
+        <hr>
+        <p>
+          We compare with some licenses listed at <a href="http://www.opensource.org/licenses/alphabetical">opensource.org</a>. Brought to you by <a href="https://github.com/PeterDaveHello">Peter Dave Hello</a>.
+        </p>
+        <p>
+          THIS SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND!
+        </p>
+
+        <!-- The License texts -->
+
+      </div>
+    </div>
+    <a href="https://github.com/PeterDaveHello/what-license"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+  </body>
+</html>
