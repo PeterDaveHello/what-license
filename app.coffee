@@ -1,74 +1,62 @@
-COMMERCIAL_OK = 1
-
 LICENSES = [
     [
         "Unlicense",
         "https://unlicense.org/",
         "Unlicense",
-        [COMMERCIAL_OK],
     ],
 
     [
         "MIT License",
         "https://opensource.org/licenses/MIT",
         "MIT",
-        [COMMERCIAL_OK],
     ],
 
     [
         "BSD 2-Clause License",
         "https://opensource.org/licenses/BSD-2-Clause",
         "BSD-2-Clause",
-        [COMMERCIAL_OK],
     ],
 
     [
         "BSD 3-Clause License",
         "https://opensource.org/licenses/BSD-3-Clause",
         "BSD-3-Clause",
-        [COMMERCIAL_OK],
     ],
 
     [
         "Apache License 2.0",
         "https://opensource.org/licenses/Apache-2.0",
         "Apache-2.0",
-        [COMMERCIAL_OK],
     ],
 
     [
         "Header of Apache License 2.0",
         "https://opensource.org/licenses/Apache-2.0",
         "Apache-2.0_SHORT",
-        [COMMERCIAL_OK],
     ],
 
     [
         "GNU General Public License version 2 (GPL-2.0)",
         "https://opensource.org/licenses/GPL-2.0",
         "GPL-2.0",
-        [],
     ],
 
     [
         "Header of GNU General Public License version 2 (GPL-2.0)",
         "https://opensource.org/licenses/GPL-2.0",
         "GPL-2.0_SHORT",
-        [],
     ],
 
     [
         "GNU General Public License version 3 (GPL-3.0)",
         "https://opensource.org/licenses/GPL-3.0",
         "GPL-3.0",
-        [],
     ],
 
     [
         "Header of GNU General Public License version 3 (GPL-3.0)",
         "https://opensource.org/licenses/GPL-3.0",
         "GPL-3.0_SHORT",
-        [],
     ],
 ]
 
@@ -145,26 +133,6 @@ window.check = ->
              <li><a href="#{ r[1][1] }" target="_blank" title="Show full license" style="color:inherit; text-decoration"><strong>#{ r[1][0] }</strong> - #{ Math.round r[0] }% match into this license</a>
              """
 
-            if 1 in r[1][3]
-                 html += """
-                  <span class="ok">
-                    OK FOR USE IN COMMERCIAL PRODUCTS
-                  </span>
-                  """
-
-            if 1 not in r[1][3]
-                 html += """
-                   <span class="warn">
-                    BETTER DON'T USE IN COMMERCIAL PRODUCTS
-                  </span>
-                  """
-
-            if 2 in r[1][3]
-                 html += """
-                   <span class="warn">
-                    DON'T FORGET TO ATTRIBUTE THE AUTHOR
-                  </span>
-                  """
             if r[2]
                  html += """
                   <div>
