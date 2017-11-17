@@ -3,7 +3,7 @@
 
 temp="$(mktemp)"
 
-for license in $(ls licenses/*)
+for license in licenses/*
 do
     {
         echo "<pre class=\"license\" id=\"${license/licenses\//}\">"
