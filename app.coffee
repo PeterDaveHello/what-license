@@ -100,6 +100,18 @@ LICENSES = [
         "https://opensource.org/licenses/AGPL-3.0",
         "AGPL-3.0",
     ],
+
+    [
+        "GNU Lesser General Public License version 2.1 (LGPL-2.1)",
+        "https://opensource.org/licenses/LGPL-2.1",
+        "LGPL-2.1",
+    ],
+
+    [
+        "GNU Lesser General Public License version 3 (LGPL-3.0)",
+        "https://opensource.org/licenses/LGPL-3.0",
+        "LGPL-3.0",
+    ],
 ]
 
 normalize_license_text = (text) -> text.replace(/\s+/gi, " ").replace(/\./gi, ".\n")
