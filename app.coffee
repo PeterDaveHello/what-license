@@ -82,6 +82,18 @@ LICENSES = [
         "https://opensource.org/licenses/Zlib",
         "Zlib",
     ],
+
+    [
+        "Eclipse Public License 1.0 (EPL-1.0)",
+        "https://opensource.org/licenses/EPL-1.0",
+        "EPL-1.0",
+    ],
+
+    [
+        "Eclipse Public License 2.0 (EPL-2.0)",
+        "https://opensource.org/licenses/EPL-2.0",
+        "EPL-2.0",
+    ],
 ]
 
 normalize_license_text = (text) -> text.replace(/\s+/gi, " ").replace(/\./gi, ".\n")
