@@ -7,7 +7,8 @@
     "url": "git+https://github.com/PeterDaveHello/what-license.git"
   },
   "scripts": {
-    "build": "npm run coffee && npm run minify && bash generator.sh",
+    "build": "npm run dev-build && npm run minify",
+    "dev-build": "npm run coffee && bash generator.sh",
     "coffee": "coffee -c app.coffee",
     "minify": "uglifyjs --mangle --compress if_return=true -o app.js app.js"
   },
