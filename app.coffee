@@ -58,6 +58,24 @@ LICENSES = [
         "https://opensource.org/licenses/GPL-3.0",
         "GPL-3.0_SHORT",
     ],
+
+    [
+        "Mozilla Public License 1.0 (MPL-1.0)",
+        "https://opensource.org/licenses/MPL-1.1",
+        "MPL-1.0",
+    ],
+
+    [
+        "Mozilla Public License 1.1 (MPL-1.1)",
+        "https://opensource.org/licenses/MPL-1.1",
+        "MPL-1.1",
+    ],
+
+    [
+        "Mozilla Public License 2.0 (MPL-2.0)",
+        "https://opensource.org/licenses/MPL-2.0",
+        "MPL-2.0",
+    ],
 ]
 
 normalize_license_text = (text) -> text.replace(/\s+/gi, " ").replace(/\./gi, ".\n")
