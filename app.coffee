@@ -94,6 +94,12 @@ LICENSES = [
         "https://opensource.org/licenses/EPL-2.0",
         "EPL-2.0",
     ],
+
+    [
+        "GNU Affero General Public License v3 (AGPL-3.0)",
+        "https://opensource.org/licenses/AGPL-3.0",
+        "AGPL-3.0",
+    ],
 ]
 
 normalize_license_text = (text) -> text.replace(/\s+/gi, " ").replace(/\./gi, ".\n")
