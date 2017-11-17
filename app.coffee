@@ -76,6 +76,12 @@ LICENSES = [
         "https://opensource.org/licenses/MPL-2.0",
         "MPL-2.0",
     ],
+
+    [
+        "The zlib/libpng License (Zlib)",
+        "https://opensource.org/licenses/Zlib",
+        "Zlib",
+    ],
 ]
 
 normalize_license_text = (text) -> text.replace(/\s+/gi, " ").replace(/\./gi, ".\n")
