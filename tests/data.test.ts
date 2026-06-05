@@ -9,6 +9,8 @@ import {
   spdxLicenseIdSourceVersion,
 } from '../src/data/spdx-license-ids.generated'
 import { legacyAliases } from '../src/data/legacy-aliases'
+import { namedHeaderAliases } from '../src/data/license-header-aliases'
+import { normalizeLoose } from '../src/core/normalize'
 
 describe('generated SPDX data', () => {
   it('contains the phase-one SPDX snapshot', () => {
@@ -71,5 +73,37 @@ describe('generated SPDX data', () => {
     expect(
       legacyAliases.find((alias) => alias.legacyId === 'GPL-2.0')?.candidates,
     ).toEqual(['GPL-2.0-only', 'GPL-2.0-or-later'])
+  })
+
+  it('keeps header and legacy aliases pointed at supported licenses', () => {
+    const ids = new Set(licenses.map((license) => license.licenseId))
+
+    expect(namedHeaderAliases.length).toBeGreaterThan(0)
+    expect(legacyAliases.length).toBeGreaterThan(0)
+    for (const alias of namedHeaderAliases) {
+      expect(alias.aliases.length, alias.licenseId).toBeGreaterThan(0)
+      expect(ids.has(alias.licenseId), alias.licenseId).toBe(true)
+    }
+    for (const alias of legacyAliases) {
+      expect(alias.candidates.length, alias.legacyId).toBeGreaterThan(0)
+      for (const candidate of alias.candidates) {
+        expect(ids.has(candidate), alias.legacyId + ' -> ' + candidate).toBe(
+          true,
+        )
+      }
+    }
+  })
+
+  it('keeps curated header aliases unambiguous after normalization', () => {
+    const owners = new Map<string, string>()
+
+    for (const alias of namedHeaderAliases) {
+      for (const text of alias.aliases) {
+        const key = normalizeLoose(text.replace(/\+/g, ' plus '))
+        const owner = owners.get(key)
+        expect(owner === undefined || owner === alias.licenseId, key).toBe(true)
+        owners.set(key, alias.licenseId)
+      }
+    }
   })
 })
