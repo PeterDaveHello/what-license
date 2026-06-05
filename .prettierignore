@@ -6,3 +6,5 @@ test-results/
 AGENTS.md
 plan.md
 src/data/licenses.generated.ts
+src/data/spdx-license-ids.generated.ts
+src/data/spdx-exceptions.generated.ts
