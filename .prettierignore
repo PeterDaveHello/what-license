@@ -3,4 +3,6 @@ dist/
 coverage/
 playwright-report/
 test-results/
-*.tsbuildinfo
+AGENTS.md
+plan.md
+src/data/licenses.generated.ts
